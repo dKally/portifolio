@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    font-family: 'Poppins', sans-serif;
+}
+
+body.no-scroll{
+    overflow: hidden;
+}
+
+.titles{
+    background-color: rgb(52, 17, 85);
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 10px;
+    font-size: 1.5rem;   
+    background: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    animation: background-animation 2.5s ease-in-out 2s forwards;
+}
+
+@keyframes background-animation {
+    0%{
+        height: 100vh;
+    }
+    100%{
+        height: 50vh;
+    }
+}
+
+/* Animation Name */
+
+.titles span{
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation: shine 4s ease-in-out infinite;
+}
+
+.titles span:nth-of-type(2){
+    animation-delay: 0.1s;
+}
+.titles span:nth-of-type(3){
+    animation-delay: 0.2s;
+}
+.titles span:nth-of-type(4){
+    animation-delay: 0.3s;
+}
+.titles span:nth-of-type(5){
+    animation-delay: 0.4s;
+}
+.titles span:nth-of-type(6){
+    animation-delay: 0.5s;
+}
+.titles span:nth-of-type(7){
+    animation-delay: 0.6s;
+}
+.titles span:nth-of-type(8){
+    animation-delay: 0.7s;
+}
+.titles span:nth-of-type(9){
+    animation-delay: 0.8s;
+}
+.titles span:nth-of-type(10){
+    animation-delay: 0.9s;
+}
+.titles span:nth-of-type(11){
+    animation-delay: 1s;
+}
+.titles span:nth-of-type(12){
+    animation-delay: 1.1s;
+}
+.titles span:nth-of-type(13){
+    animation-delay: 1.2s;
+}
+.titles span:nth-of-type(14){
+    animation-delay: 1.3s;
+}
+.titles span:nth-of-type(15){
+    animation-delay: 1.4s;
+}
+.titles span:nth-of-type(16){
+    animation-delay: 1.5s;
+}
+.titles span:nth-of-type(17){
+    animation-delay: 1.6s;
+}
+.titles span:nth-of-type(18){
+    animation-delay: 1.7s;
+}
+.titles span:nth-of-type(19){
+    animation-delay: 1.8s;
+}
+.titles span:nth-of-type(20){
+    animation-delay: 1.9s;
+}
+
+@keyframes shine{
+    0%{
+        color: rgb(57, 255, 20);
+        text-shadow: 0 0 12px rgb(57, 255, 20),
+        0 0 50px rgb(57, 255, 20),
+        0 0 100px rgb(57, 255, 20)
+        ;
+    }
+    10%, 90%{
+        color: #fff;
+        text-shadow: none;
+    }
+}
+
+/* Animation Name Ends Here */
+
+/* Animation Sub-title */
+
+.sub-title{
+    font-family: monospace;
+    border-right: 4px solid white;
+    text-align: center;
+    width: 0ch;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 10px;
+    animation: typing 1.4s steps(24) 0.5s forwards, blinking 0.5s infinite 3s step-end alternate;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 25ch;
+    }
+}
+
+@keyframes blinking {
+    50%{
+        border-color: transparent;
+    }
+    
+}
+
+/* Animation Sub-title Ends Here */
+
+/* Icons GitHub & Linkedin */
+
+.icon{
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: white;
+    border-radius: 50%;
+    outline: 2px solid white;
+    transition-property: outline-offset,
+    outline-color, background-color;
+    transition-duration: .25s;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.icon:hover{
+    outline-offset: 4px;
+}
+
+.icon:hover i{
+    animation: shake .25s;
+}
+
+.icon-linkedin:hover{
+    background-color: #0077b5;
+    outline-color: #0077b5;
+}
+
+.icon-github:hover{
+    background-color: #2ea44f;
+    outline-color: #2ea44f;
+}
+
+@keyframes shake{
+    10%{transform: rotate(15deg);}
+    20%{transform: rotate(-15deg);}
+    30%{transform: rotate(15deg);}
+    40%{transform: rotate(-15deg);}
+}
+
+/* Icons GitHub & Linkedin Ends Here*/
+
+
+.container-1{
+    background: linear-gradient(to bottom, rgb(19, 19, 19), rgb(19, 19, 19), #000);
+    padding: 42px;
+    font-size: 1.3rem;
+    color: #fff;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-1 a{
+    color: #fff;
+}
+
+.about-title{
+    font-size: 2rem;
+    margin-bottom: 35px;
+    margin-top: 10px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.about{
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+    height: 100%;
+}
+
+.titles-2{
+    height: 30vh;
+    animation: none
+}
+
+.container-2{
+    background: linear-gradient(to bottom, rgb(19, 19, 19), rgb(19, 19, 19), #000);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 70%;
+    text-align: center;
+    padding: 20px;
+}
+
+.project a{
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project-description{
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.project i{
+    letter-spacing: normal;
+    font-size: 22px;
+}
+
+.project:nth-child(2){
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.titles-3{
+    height: 30vh;
+    animation: none
+}
+
+.container-3{
+    background: linear-gradient(to bottom, rgb(19, 19, 19), rgb(19, 19, 19), #000);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom: 75px;
+}
+
+.description{
+    max-width: 70%;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.description a{
+    color: #fff;
+}
+
+.certificates{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+@media (max-width: 1367px) {
+    .container-1{
+        height: 55vh;
+        font-size: 1.2rem;
+    }
+
+    .about-title{
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    
+    .about{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media (max-width: 1050px) {
+    
+    .about{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 920px) {
+    .container-1{
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+
+    .container-2{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .container-3{
+        padding-top: 25px;
+        padding-bottom: 55px;
+    }
+
+    .project{
+        max-width: 90%;
+    }
+
+    .description{
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 740px) {
+    .container-1{
+        font-size: 1.1rem;
+    }
+    .about{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 650px) {
+    .about-title{
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+    }
+    .container-1{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .titles span{
+        font-size: 2rem;
+    }
+    .about{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 486px) {
+    .titles{
+        padding: 30px;
+        text-align: center;
+    }
+
+    .titles span{
+        font-size: 1.8rem;
+    }
+
+    .sub-title{
+        font-size: 1.2rem;
+    }
+
+    .about{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 430px) {
+    .container-1{
+        height: 60vh;
+    }
+}
+
+@media (max-width: 370px) {
+    .container-1{
+        height: 65vh;
+    }
+}
