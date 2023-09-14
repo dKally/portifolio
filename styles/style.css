@@ -440,3 +440,14 @@ body.no-scroll{
     }
 }
 
+@media (max-width: 400px){
+    .container-1{
+        height: 55vh;
+    }
+}
+
+@media (max-width: 350px){
+    .container-1{
+        height: 60vh;
+    }
+}
