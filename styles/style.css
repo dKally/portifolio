@@ -272,6 +272,11 @@ body.no-scroll{
     margin-bottom: 10px;
 }
 
+.project-title:hover{
+    color: purple;
+    transition: 0.3 ease-in-out;
+}
+
 .project-description{
     font-size: 1.1rem;
     margin-bottom: 8px;
@@ -300,7 +305,7 @@ body.no-scroll{
     justify-content: center;
     align-items: center;
     padding-top: 45px;
-    padding-bottom: 75px;
+    padding-bottom: 150px;
 }
 
 .description{
@@ -324,7 +329,7 @@ body.no-scroll{
 
 @media (max-width: 1367px) {
     .container-1{
-        height: 55vh;
+        height: 60vh;
         font-size: 1.2rem;
     }
 
@@ -424,12 +429,12 @@ body.no-scroll{
 
 @media (max-width: 430px) {
     .container-1{
-        height: 60vh;
+        height: 65vh;
     }
 }
 
 @media (max-width: 370px) {
     .container-1{
-        height: 65vh;
+        height: 70vh;
     }
 }
