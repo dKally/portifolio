@@ -215,6 +215,7 @@ body.no-scroll{
     text-align: center;
     flex-direction: column;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .container-1 a{
@@ -250,6 +251,7 @@ body.no-scroll{
     align-items: center;
     padding-top: 45px;
     padding-bottom: 45px;
+    overflow-x: hidden;
 }
 
 .project{
@@ -306,6 +308,7 @@ body.no-scroll{
     align-items: center;
     padding-top: 45px;
     padding-bottom: 150px;
+    overflow-x: hidden;
 }
 
 .description{
@@ -429,7 +432,7 @@ body.no-scroll{
 
 @media (max-width: 430px) {
     .container-1{
-        height: 50vh;
+        height: 55vh;
         font-size: 0.9rem;
     }
     .about-title{
@@ -442,12 +445,12 @@ body.no-scroll{
 
 @media (max-width: 400px){
     .container-1{
-        height: 55vh;
+        height: 60vh;
     }
 }
 
 @media (max-width: 350px){
     .container-1{
-        height: 60vh;
+        height: 65vh;
     }
 }
