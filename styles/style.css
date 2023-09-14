@@ -329,7 +329,7 @@ body.no-scroll{
 
 @media (max-width: 1367px) {
     .container-1{
-        height: 60vh;
+        height: 55vh;
         font-size: 1.2rem;
     }
 
@@ -414,7 +414,7 @@ body.no-scroll{
     }
 
     .titles span{
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 
     .sub-title{
@@ -429,12 +429,14 @@ body.no-scroll{
 
 @media (max-width: 430px) {
     .container-1{
-        height: 65vh;
+        height: 50vh;
+        font-size: 0.9rem;
+    }
+    .about-title{
+        font-size: 1.45rem;
+    }
+    .container-3{
+        padding-bottom: 180px;
     }
 }
 
-@media (max-width: 370px) {
-    .container-1{
-        height: 70vh;
-    }
-}
